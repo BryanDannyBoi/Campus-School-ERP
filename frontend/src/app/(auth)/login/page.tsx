@@ -54,14 +54,14 @@ export default function LoginPage() {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="hidden lg:flex lg:w-1/2 relative overflow-hidden flex-col justify-between p-12"
         style={{ 
-          backgroundImage: 'linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 58, 95, 0.92) 100%), url("/school_aerial.jpg")',
+          backgroundImage: 'linear-gradient(135deg, rgba(36, 29, 26, 0.88) 0%, rgba(22, 17, 15, 0.92) 100%), url("/school_aerial.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
       >
         {/* Decorative circles */}
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10"
-          style={{ background: 'radial-gradient(circle, #3b82f6 0%, transparent 70%)', transform: 'translate(30%, -30%)' }} />
+          style={{ background: 'radial-gradient(circle, #F36D48 0%, transparent 70%)', transform: 'translate(30%, -30%)' }} />
         <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full opacity-10"
           style={{ background: 'radial-gradient(circle, #8b5cf6 0%, transparent 70%)', transform: 'translate(-30%, 30%)' }} />
 

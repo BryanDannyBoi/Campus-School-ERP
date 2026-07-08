@@ -229,7 +229,7 @@ export default function HomePage() {
           </span>
           <h1 className="text-5xl md:text-6xl font-black tracking-tight leading-tight mb-8">
             Empowering Schools with a <br/>
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-rose-400 bg-clip-text text-transparent">
               Unified Digital Ecosystem
             </span>
           </h1>
@@ -240,7 +240,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
               href="#quick-login"
-              className="px-6 py-3.5 text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl shadow-lg shadow-blue-500/25 transition-all flex items-center gap-2"
+              className="px-6 py-3.5 text-sm font-semibold bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl shadow-lg shadow-blue-500/20 transition-all flex items-center gap-2"
             >
               Quick Start Demo <ArrowRight className="w-4 h-4" />
             </a>
