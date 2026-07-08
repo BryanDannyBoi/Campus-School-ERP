@@ -15,7 +15,7 @@ import { DashboardStats } from '@/types';
 import { formatCurrency, formatDate, timeAgo } from '@/lib/utils';
 import Link from 'next/link';
 
-const PIE_COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
+const PIE_COLORS = ['#F36D48', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
 
 export default function DashboardPage() {
   const { user } = useAuth();
@@ -118,7 +118,7 @@ export default function DashboardPage() {
         <div 
           className="absolute inset-0 bg-cover bg-center" 
           style={{ 
-            backgroundImage: 'linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(30, 58, 95, 0.45)), url("/school_arch.png")' 
+            backgroundImage: 'linear-gradient(to right, rgba(36, 29, 26, 0.95), rgba(75, 16, 3, 0.45)), url("/school_arch.png")' 
           }} 
         />
         <div className="relative z-10 p-6 md:p-8 text-white">
@@ -160,8 +160,8 @@ export default function DashboardPage() {
             <AreaChart data={stats?.monthlyAttendance || []} margin={{ top: 5, right: 10, bottom: 5, left: -20 }}>
               <defs>
                 <linearGradient id="presentGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+                  <stop offset="5%" stopColor="#F36D48" stopOpacity={0.3} />
+                  <stop offset="95%" stopColor="#F36D48" stopOpacity={0} />
                 </linearGradient>
                 <linearGradient id="absentGrad" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="#ef4444" stopOpacity={0.3} />
@@ -173,7 +173,7 @@ export default function DashboardPage() {
               <YAxis tick={{ fontSize: 11, fill: '#94a3b8' }} />
               <Tooltip contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)' }} />
               <Legend wrapperStyle={{ fontSize: '12px' }} />
-              <Area type="monotone" dataKey="present" name="Present" stroke="#3b82f6" fill="url(#presentGrad)" strokeWidth={2} />
+              <Area type="monotone" dataKey="present" name="Present" stroke="#F36D48" fill="url(#presentGrad)" strokeWidth={2} />
               <Area type="monotone" dataKey="absent" name="Absent" stroke="#ef4444" fill="url(#absentGrad)" strokeWidth={2} />
             </AreaChart>
           </ResponsiveContainer>
@@ -196,7 +196,7 @@ export default function DashboardPage() {
               <XAxis dataKey="month" tick={{ fontSize: 11, fill: '#94a3b8' }} />
               <YAxis tick={{ fontSize: 11, fill: '#94a3b8' }} />
               <Tooltip contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)' }} />
-              <Bar dataKey="collected" name="Collected" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="collected" name="Collected" fill="#F36D48" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </motion.div>
